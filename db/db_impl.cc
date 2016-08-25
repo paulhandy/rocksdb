@@ -1097,6 +1097,7 @@ void DBImpl::PurgeObsoleteFiles(const JobContext& state, bool schedule_only) {
       case kIdentityFile:
       case kMetaDatabase:
       case kOptionsFile:
+      case kBlobFile:
         keep = true;
         break;
     }
